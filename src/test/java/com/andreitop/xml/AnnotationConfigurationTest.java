@@ -69,6 +69,7 @@ public class AnnotationConfigurationTest {
 
     @Test
     public void testTrollCollectionElements() {
+
         assertThat(troll.getListOfMounts(), hasItem(isA(Wolf.class)));
         assertThat(troll.getListOfMounts(), hasItems(null, ctx.getBean("shadowTiger",Tiger.class)));
 
